@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css0705/ex5.html</title>
+<style type="text/css">
+/* 268p
+
+/* div태그 테두리 1px 실선 색 #222 
+	안여백(padding) 20px 
+	밖여백(margin) 아래쪽 30px */
+	
+/* Id = "container" 너비 600px 테두리선 none없앰 */
+
+/* 밖여백 위아래 20px 왼쪽오른쪽 가운데 안 여백 20px */
+
+/* id = "description" 위왼쪽 위오른쪽 모서리 둥글게 30px */
+
+/* id = "package" 아래 왼쪽 아래오른쪽 모서리 둥글게 30px */
+
+div {
+	border: 1px solid #222;
+	padding: 20px;
+	margin-bottom: 30px;
+}
+
+#container {
+	width: 600px;
+	
+/* 	border: none; */
+	margin: 20px center;
+	padding: 20px;
+}
+
+#description {
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+#package {
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="description">
+			<h1>레드향</h1>
+
+			<p>
+				껍질에 붉은 빛이 돌아 <span class="accent">레드향</span>이라 불린다
+			</p>
+			<p>
+				레드향은 한라봉과 귤을 교배한 것으로 <br> 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다
+			</p>
+			<p>비타민 C와 비타민 P가 풍부해 혈액순환, 감기예방 등에 좋은 것으로 알려져 있다</p>
+
+		</div>
+
+		<div id="recipe">
+
+			<h1>레드향 샐러드 레시피</h1>
+			<p>
+				<b>재료 :</b> 레드향1개, 아보카도 1개, 토마토 1개, 샐러드 채소 30g
+			</p>
+			<p>
+				<b>드레싱 :</b> 올리브유 1큰술, 레몬즙 2큰술, 꿀 1큰술, 소금 약간
+			</p>
+			<ol type="1">
+				<li>샐러드 채소를 씻어 물기를 제거한 후 먹기 좋게 썰어서 준비합니다.</li>
+				<li>레드향과 아보카도, 토마토도 먹기 좋은 크기로 썰어 둡니다.</li>
+				<li>드레싱 재료를 믹서에 한꺼번에 넣고 갈아 줍니다.</li>
+				<li>볼에 샐러드 채소와 레드향, 아보카도, 토마토를 넣고 드레싱을 뿌리면 끝!</li>
+			</ol>
+		</div>
+
+		<div id="package">
+
+			<h2>상품구성</h2>
+			<table>
+				<caption>선물용과 가정용 상품 구성</caption>
+				<tr>
+					<td>용도</td>
+					<td>중량</td>
+					<td>개수</td>
+					<td>가격</td>
+				</tr>
+				<tr>
+					<td rowspan="2">선물용</td>
+					<td>3kg</td>
+					<td>11-16과</td>
+					<td>35000원</td>
+				</tr>
+				<tr>
+					<td>5kg</td>
+					<td>18-26과</td>
+					<td>52000원</td>
+				</tr>
+				<tr>
+					<td rowspan="2">가정용</td>
+					<td>3kg</td>
+					<td>11-16과</td>
+					<td>30000원</td>
+				</tr>
+				<tr>
+					<td>5kg</td>
+					<td>18-26과</td>
+					<td>47000원</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+</body>
+</html>
